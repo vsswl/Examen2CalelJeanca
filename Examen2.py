@@ -42,7 +42,15 @@ class MiClase:
             if song is None:
                 return False
         return True
-
+    
+    def Encuentra(self, lista, elemento):
+        if not isinstance(lista, list):
+            return "Error: El parámetro proporcionado no es una lista"
+        
+        for num in lista:
+            if num == elemento:
+                return True
+        return False
 
 ################################################################################################
 # Ejemplo de ejecución
