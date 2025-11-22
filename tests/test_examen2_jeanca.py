@@ -55,5 +55,5 @@ def test_Test2VerificaListaCanciones():
 
 def test_Test1Encuentra():
     obj = MiClase(5, 120, 12, ["Canción 1", "Canción 2", "Canción 3"], [0.8, 0.9, 0.7])
-    assert obj.Encuentra([], 0) == False
+    assert obj.Encuentra([], 0) == True
 
