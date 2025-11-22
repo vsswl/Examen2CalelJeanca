@@ -49,3 +49,11 @@ def test_Test1VerificaListaCanciones():
 def test_Test2VerificaListaCanciones():
     obj = MiClase(5, 120, 12, ["Canción 1", "Canción 2", "Canción 3"], [0.8, 0.9, 0.7])
     assert obj.VerificaListaCanciones([]) == True
+
+
+## -- Test Encuentra
+
+def test_Test1Encuentra():
+    obj = MiClase(5, 120, 12, ["Canción 1", "Canción 2", "Canción 3"], [0.8, 0.9, 0.7])
+    assert obj.Encuentra([], 0) == False
+
